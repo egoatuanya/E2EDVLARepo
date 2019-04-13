@@ -1,0 +1,1031 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Search with a valid registration number to validate the make and colour of the vehicle.",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-with-a-valid-registration-number-to-validate-the-make-and-colour-of-the-vehicle.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I input a \"valid vehicleRegNumber\" and click to continue",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I should be able to see the \"vehicle make\" and the \"vehicle colour\" displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Search with an invalid vehicle registration number to validate that the registration is invalid",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-with-an-invalid-vehicle-registration-number-to-validate-that-the-registration-is-invalid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I input an \"invalid vehicleRegNumber\" on the searchField and click to continue",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I should be able to see an \"error message\" displayed for invalid registration number",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Inputting  a wrong vehicle registration number should navigate me to the error message page",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;inputting--a-wrong-vehicle-registration-number-should-navigate-me-to-the-error-message-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I input a \"wrongVehicle regNumber\" on the searchField",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I click on the continue button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I should be navigated to an error page with \"detailsNotFound error\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file1.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file1.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file2.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file2.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file3.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file3.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file4.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file4.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file5.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file5.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file6.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file6.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file7.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file7.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file8.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file8.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file9.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file9.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file10.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;11",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file10.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file11.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;12",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file11.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file12.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;13",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file12.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file13.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;14",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file13.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file14.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;15",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file14.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file15.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;16",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file15.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file16.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;17",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file16.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file17.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;18",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file17.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Search for valid vehicle registration number read from CSV files using the below file18.csv examples",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;19",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I get test data from CSV file file18.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a valid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Search for invalid vehicle registration number read from CSV file using the below file19.csv example",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-invalid-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "I get test data from CSV file file19.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 52,
+            "name": "I enter an invalid vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 53,
+            "name": "I should be able to get an \"error message\" displayed for invalid registration number",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 65,
+        "name": "Search for wrong vehicle registration number read from CSV file using the below file20.csv example",
+        "description": "",
+        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-wrong-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "I get test data from CSV file file20.csv",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 61,
+            "name": "I enter a wrong vehicle registration number on the searchField and click to continue",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 62,
+            "name": "I should be able to get an error Page with \"detailsNotFound error\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating the details of a vehicle from the DVLA website",
+    "description": "As a user\nI want to be able to input the registration number of a vehicle on the DVLA website\nSo that I can validate the authenticity of the vehicle",
+    "id": "validating-the-details-of-a-vehicle-from-the-dvla-website",
+    "keyword": "Feature",
+    "uri": "Features/VehicleSearch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
