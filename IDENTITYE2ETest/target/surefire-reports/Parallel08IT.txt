@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: Parallel08IT
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 6.441 s <<< FAILURE! - in Parallel08IT
+Given I am on the DVLAs Vehicles Information Page(| file5.csv |)  Time elapsed: 0.103 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| file5.csv |  Time elapsed: 0.118 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+And I proceed with checking specific details of vehicles as below:(| file5.csv |)  Time elapsed: 0.014 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| file5.csv |  Time elapsed: 0.038 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+When I get test data from CSV file file5.csv(| file5.csv |)  Time elapsed: 0.031 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| file5.csv |  Time elapsed: 0.033 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+And I enter a valid vehicle registration number on the searchField and click to continue(| file5.csv |)  Time elapsed: 0.002 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| file5.csv |  Time elapsed: 0.061 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+Then I should be able to see the vehicle's make and colour for each registration number entered(| file5.csv |)  Time elapsed: 0.001 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+| file5.csv |  Time elapsed: 0.049 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+

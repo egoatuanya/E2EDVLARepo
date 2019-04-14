@@ -1,0 +1,11 @@
+#surefire_6
+#Sun Apr 14 17:57:15 BST 2019
+headless=false
+basedir=/home/automach/GitHub/E2EDVLA/E2EDVLARepo/IDENTITYE2ETest
+country=uk
+bskey=browserstack key placeholder
+user.dir=/home/automach/GitHub/E2EDVLA/E2EDVLARepo/IDENTITYE2ETest
+testbed=local
+bsuser=browserstack username placeholder
+env=staging
+localRepository=/home/automach/.m2/repository

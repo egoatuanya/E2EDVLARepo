@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
             ,strict = false		 //Skip execution of pending and undefined steps if true
             ,features = {"src/test/resources"}		//Packages where the feature files are located
             ,snippets = SnippetType.CAMELCASE	//Used to determine what the method of the Step Def would be
-	        ,glue = {"uk.gov.dvla", ""}  			//Package with Step Definitions and hooks
+	        //,glue = {"uk.gov.dvla", ""}  			//Package with Step Definitions and hooks
             ,tags = {"@regression"}
     )
     public class RunnerCukesTest {

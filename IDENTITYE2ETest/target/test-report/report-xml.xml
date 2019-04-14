@@ -1,138 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="23" tests="23" time="0">
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search with a valid registration number to validate the make and colour of the vehicle." time="0">
-<skipped><![CDATA[When I input a "valid vehicleRegNumber" and click to continue...............undefined
-Then I should be able to see the "vehicle make" and the "vehicle colour" displayed.undefined
-]]></skipped>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="23" time="278.62557">
+<testcase classname="Getting Vehicle Details" name="Enter a valid vehicle registration number and get the make and colour of vehicle" time="9.224617">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I search with a "valid vehicleRegNumber" and click to continue.........passed
+Then I should be able to see the "vehicle make" and the "vehicle colour" displayed.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search with an invalid vehicle registration number to validate that the registration is invalid" time="0">
-<skipped><![CDATA[When I input an "invalid vehicleRegNumber" on the searchField and click to continue.undefined
-Then I should be able to see an "error message" displayed for invalid registration number.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Enter an invalid vehicle registration number and receive an error message" time="18.86759">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I enter an "invalid vehicleRegNumber" on the searchField and click to continue.passed
+Then I should be able to see an "error message" displayed for invalid registration number.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Inputting  a wrong vehicle registration number should navigate me to the error message page" time="0">
-<skipped><![CDATA[When I input a "wrongVehicle regNumber" on the searchField..................undefined
-And I click on the continue button..........................................undefined
-Then I should be navigated to an error page with "detailsNotFound error"....undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Enter a wrong vehicle registration number and receive an error page with an error message" time="19.20461">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I enter a "wrongVehicle regNumber" on the searchField..................passed
+And I click on the continue button..........................................passed
+Then I should be navigated to an error page with "detailsNotFound error"....passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file1.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file1.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file1.csv examples" time="64.219695">
+<failure message="java.lang.ArrayIndexOutOfBoundsException: 1&#10;&#9;at uk.gov.dvla.utilities.FileReaderUtil.getVehicleMake(FileReaderUtil.java:54)&#10;&#9;at uk.gov.dvla.steps.VehicleSearchSteps.iGetTestDataFromCSVFile(VehicleSearchSteps.java:94)&#10;&#9;at ✽.When I get test data from CSV file file1.csv(Features/VehicleSearch.feature:30)&#10;"><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file1.csv................................failed
+And I enter a valid vehicle registration number on the searchField and click to continue.skipped
+Then I should be able to see the vehicle's make and colour for each registration number entered.skipped
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at uk.gov.dvla.utilities.FileReaderUtil.getVehicleMake(FileReaderUtil.java:54)
+	at uk.gov.dvla.steps.VehicleSearchSteps.iGetTestDataFromCSVFile(VehicleSearchSteps.java:94)
+	at ✽.When I get test data from CSV file file1.csv(Features/VehicleSearch.feature:30)
+]]></failure>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file2.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file2.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file2.csv examples" time="4.24245">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file2.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file3.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file3.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file3.csv examples" time="4.229407">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file3.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file4.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file4.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file4.csv examples" time="3.925907">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file4.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file5.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file5.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file5.csv examples" time="3.99955">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file5.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file6.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file6.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file6.csv examples" time="3.915134">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file6.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file7.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file7.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file7.csv examples" time="63.872497">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at uk.gov.dvla.steps.VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered(VehicleSearchSteps.java:106)&#10;&#9;at ✽.Then I should be able to see the vehicle's make and colour for each registration number entered(Features/VehicleSearch.feature:32)&#10;"><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file7.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at uk.gov.dvla.steps.VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered(VehicleSearchSteps.java:106)
+	at ✽.Then I should be able to see the vehicle's make and colour for each registration number entered(Features/VehicleSearch.feature:32)
+]]></failure>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file8.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file8.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file8.csv examples" time="4.522849">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file8.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file9.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file9.csv................................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file9.csv examples" time="4.108176">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file9.csv................................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file10.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file10.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file10.csv examples" time="3.953602">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file10.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file11.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file11.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file11.csv examples" time="3.963112">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file11.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file12.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file12.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file12.csv examples" time="3.749738">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file12.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file13.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file13.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file13.csv examples" time="4.071692">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file13.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file14.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file14.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file14.csv examples" time="4.207029">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file14.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file15.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file15.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file15.csv examples" time="3.885685">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file15.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file16.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file16.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file16.csv examples" time="3.992749">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file16.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file17.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file17.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file17.csv examples" time="4.032216">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file17.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for valid vehicle registration number read from CSV files using the below file18.csv examples" time="0">
-<skipped><![CDATA[When I get test data from CSV file file18.csv...............................undefined
-And I enter a valid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to see the vehicle's make and colour for each registration number entered.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for valid vehicle registration number read from CSV files using the below file18.csv examples" time="4.095997">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file18.csv...............................passed
+And I enter a valid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to see the vehicle's make and colour for each registration number entered.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for invalid vehicle registration number read from CSV file using the below file19.csv example" time="0">
-<skipped><![CDATA[When I get test data from CSV file file19.csv...............................undefined
-And I enter an invalid vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to get an "error message" displayed for invalid registration number.undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for invalid vehicle registration number read from CSV file using the below file19.csv example" time="19.136056">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file19.csv...............................passed
+And I enter an invalid vehicle registration number on the searchField and click to continue.passed
+Then I should be able to get an "error message" displayed for invalid registration number.passed
+]]></system-out>
 </testcase>
-<testcase classname="Validating the details of a vehicle from the DVLA website" name="Search for wrong vehicle registration number read from CSV file using the below file20.csv example" time="0">
-<skipped><![CDATA[When I get test data from CSV file file20.csv...............................undefined
-And I enter a wrong vehicle registration number on the searchField and click to continue.undefined
-Then I should be able to get an error Page with "detailsNotFound error".....undefined
-]]></skipped>
+<testcase classname="Getting Vehicle Details" name="Search for wrong vehicle registration number read from CSV file using the below file20.csv example" time="19.205212">
+<system-out><![CDATA[Given I am on the DVLAs Vehicles Information Page...........................passed
+And I proceed with checking specific details of vehicles as below:..........passed
+When I get test data from CSV file file20.csv...............................passed
+And I enter a wrong vehicle registration number on the searchField and click to continue.passed
+Then I should be able to get an error Page with "detailsNotFound error".....passed
+]]></system-out>
 </testcase>
 </testsuite>

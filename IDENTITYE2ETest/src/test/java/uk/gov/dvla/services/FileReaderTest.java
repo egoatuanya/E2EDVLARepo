@@ -3,8 +3,8 @@ package uk.gov.dvla.services;
 import java.io.File;
 
 import org.junit.Test;
-import uk.co.gov.utilities.FileReader;
-import uk.co.gov.utilities.FileReaderUtil;
+import uk.gov.dvla.utilities.FileReader;
+import uk.gov.dvla.utilities.FileReaderUtil;
 
 import java.io.File;
 

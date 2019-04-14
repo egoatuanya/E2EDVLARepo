@@ -3,113 +3,440 @@
     "line": 2,
     "elements": [
       {
-        "line": 7,
-        "name": "Search with a valid registration number to validate the make and colour of the vehicle.",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-with-a-valid-registration-number-to-validate-the-make-and-colour-of-the-vehicle.",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "I input a \"valid vehicleRegNumber\" and click to continue",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
+              "duration": 163104963,
+              "status": "passed"
             },
             "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2368734306,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1005768,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5447004158,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Enter a valid vehicle registration number and get the make and colour of vehicle",
+        "description": "",
+        "id": "getting-vehicle-details;enter-a-valid-vehicle-registration-number-and-get-the-make-and-colour-of-vehicle",
+        "after": [
+          {
+            "result": {
+              "duration": 173615,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1131859350,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search with a \"valid vehicleRegNumber\" and click to continue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid vehicleRegNumber",
+                  "offset": 17
+                }
+              ],
+              "location": "VehicleSearchSteps.iSearchWithAAndClickToContinue(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112734526,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "I should be able to see the \"vehicle make\" and the \"vehicle colour\" displayed",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "vehicle make",
+                  "offset": 29
+                },
+                {
+                  "val": "vehicle colour",
+                  "offset": 52
+                }
+              ],
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheAndTheDisplayed(String,String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 11,
-        "name": "Search with an invalid vehicle registration number to validate that the registration is invalid",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-with-an-invalid-vehicle-registration-number-to-validate-that-the-registration-is-invalid",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 675106,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1130934479,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 93118,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1807660677,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Enter an invalid vehicle registration number and receive an error message",
+        "description": "",
+        "id": "getting-vehicle-details;enter-an-invalid-vehicle-registration-number-and-receive-an-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 39962,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 15868428493,
+              "status": "passed"
             },
-            "line": 12,
-            "name": "I input an \"invalid vehicleRegNumber\" on the searchField and click to continue",
-            "match": {},
+            "line": 19,
+            "name": "I enter an \"invalid vehicleRegNumber\" on the searchField and click to continue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid vehicleRegNumber",
+                  "offset": 12
+                }
+              ],
+              "location": "VehicleSearchSteps.iEnterAnOnTheSearchFieldAndClickToContinue(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 59758617,
+              "status": "passed"
             },
-            "line": 13,
+            "line": 20,
             "name": "I should be able to see an \"error message\" displayed for invalid registration number",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "error message",
+                  "offset": 28
+                }
+              ],
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeAnDisplayedForInvalidRegistrationNumber(String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 15,
-        "name": "Inputting  a wrong vehicle registration number should navigate me to the error message page",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;inputting--a-wrong-vehicle-registration-number-should-navigate-me-to-the-error-message-page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 468811,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1258652048,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1738832977,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Enter a wrong vehicle registration number and receive an error page with an error message",
+        "description": "",
+        "id": "getting-vehicle-details;enter-a-wrong-vehicle-registration-number-and-receive-an-error-page-with-an-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 53971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 348115245,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "I input a \"wrongVehicle regNumber\" on the searchField",
-            "match": {},
+            "line": 24,
+            "name": "I enter a \"wrongVehicle regNumber\" on the searchField",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrongVehicle regNumber",
+                  "offset": 11
+                }
+              ],
+              "location": "VehicleSearchSteps.iEnterAOnTheSearchField(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 15799097704,
+              "status": "passed"
             },
-            "line": 17,
+            "line": 25,
             "name": "I click on the continue button",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iClickOnTheContinueButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 59327196,
+              "status": "passed"
             },
-            "line": 18,
+            "line": 26,
             "name": "I should be navigated to an error page with \"detailsNotFound error\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "detailsNotFound error",
+                  "offset": 45
+                }
+              ],
+              "location": "VehicleSearchSteps.iShouldBeNavigatedToAnErrorPageWith(String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 28,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 773519,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2344005245,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61698,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1779442642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 35,
         "name": "Search for valid vehicle registration number read from CSV files using the below file1.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;2",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 60089833204,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 5578198,
+              "error_message": "java.lang.ArrayIndexOutOfBoundsException: 1\n\tat uk.gov.dvla.utilities.FileReaderUtil.getVehicleMake(FileReaderUtil.java:54)\n\tat uk.gov.dvla.steps.VehicleSearchSteps.iGetTestDataFromCSVFile(VehicleSearchSteps.java:94)\n\tat ✽.When I get test data from CSV file file1.csv(Features/VehicleSearch.feature:30)\n",
+              "status": "failed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file1.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file1.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -117,20 +444,24 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -142,20 +473,93 @@
         ]
       },
       {
-        "line": 29,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 734947,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1384923992,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 229250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1742399524,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 36,
         "name": "Search for valid vehicle registration number read from CSV files using the below file2.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;3",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 41746,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 391112,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file2.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file2.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -163,20 +567,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1013393703,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 100335350,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -188,20 +598,93 @@
         ]
       },
       {
-        "line": 30,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2137754,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1234818838,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 69179,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1736091173,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 37,
         "name": "Search for valid vehicle registration number read from CSV files using the below file3.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;4",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 36413,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1514100,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file3.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file3.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -209,20 +692,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1161991400,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 92748393,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -234,20 +723,93 @@
         ]
       },
       {
-        "line": 31,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 365374,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997187866,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 359903,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1718177460,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 38,
         "name": "Search for valid vehicle registration number read from CSV files using the below file4.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;5",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 36571,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 367712,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file4.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file4.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -255,20 +817,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1117483485,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 91928764,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -280,20 +848,93 @@
         ]
       },
       {
-        "line": 32,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 760870,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1022710343,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 253550,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1806497257,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 39,
         "name": "Search for valid vehicle registration number read from CSV files using the below file5.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;6",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 40690,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 371041,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file5.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file5.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -301,20 +942,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1074556132,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 94360553,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -326,20 +973,93 @@
         ]
       },
       {
-        "line": 33,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1824468,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1097504806,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 48301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1734115543,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 40,
         "name": "Search for valid vehicle registration number read from CSV files using the below file6.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;7",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 24779,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 325109,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file6.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file6.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -347,20 +1067,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 990737698,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 90553009,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -372,20 +1098,93 @@
         ]
       },
       {
-        "line": 34,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2077883,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 972576881,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39598,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1678319554,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 41,
         "name": "Search for valid vehicle registration number read from CSV files using the below file7.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;8",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 60072478298,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 475228,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file7.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file7.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -393,20 +1192,27 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1057236495,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 89293208,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat uk.gov.dvla.steps.VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered(VehicleSearchSteps.java:106)\n\tat ✽.Then I should be able to see the vehicle\u0027s make and colour for each registration number entered(Features/VehicleSearch.feature:32)\n",
+              "status": "failed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -418,20 +1224,93 @@
         ]
       },
       {
-        "line": 35,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 755395,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1597569854,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 58519,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1803104502,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 42,
         "name": "Search for valid vehicle registration number read from CSV files using the below file8.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;9",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 25003,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 628285,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file8.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file8.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -439,20 +1318,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1031644088,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 89063262,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -464,20 +1349,93 @@
         ]
       },
       {
-        "line": 36,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2129677,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1161233458,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 435971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1799831213,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 43,
         "name": "Search for valid vehicle registration number read from CSV files using the below file9.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;10",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 25849,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 595861,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file9.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file9.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -485,20 +1443,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1054536467,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 89387553,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -510,20 +1474,93 @@
         ]
       },
       {
-        "line": 37,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1023382,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1051667084,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 63620,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1705356830,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 44,
         "name": "Search for valid vehicle registration number read from CSV files using the below file10.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;11",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 25948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 377940,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file10.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file10.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -531,20 +1568,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1105677242,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 89409545,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -556,20 +1599,93 @@
         ]
       },
       {
-        "line": 38,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 893703,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1025194451,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 98837,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1730390652,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 45,
         "name": "Search for valid vehicle registration number read from CSV files using the below file11.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;12",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 34693,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 733029,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file11.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file11.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -577,20 +1693,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1117025315,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 88741006,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -602,20 +1724,93 @@
         ]
       },
       {
-        "line": 39,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 860570,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 982292887,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 38678,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1741234431,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 46,
         "name": "Search for valid vehicle registration number read from CSV files using the below file12.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;13",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 26677,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 544391,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file12.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file12.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -623,20 +1818,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 938627526,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 86112559,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -648,20 +1849,93 @@
         ]
       },
       {
-        "line": 40,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4851022,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1202080691,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 802757,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1728703469,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 47,
         "name": "Search for valid vehicle registration number read from CSV files using the below file13.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;14",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;14",
+        "after": [
+          {
+            "result": {
+              "duration": 459310,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 256704,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file13.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file13.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -669,20 +1943,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1045432444,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 89105341,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -694,20 +1974,93 @@
         ]
       },
       {
-        "line": 41,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1264415,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1199276444,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 49301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1734669424,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 48,
         "name": "Search for valid vehicle registration number read from CSV files using the below file14.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;15",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;15",
+        "after": [
+          {
+            "result": {
+              "duration": 129175,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 337123,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file14.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file14.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -715,20 +2068,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1179684212,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 91618831,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -740,20 +2099,93 @@
         ]
       },
       {
-        "line": 42,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 911363,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1074807505,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 48909,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1686772281,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 49,
         "name": "Search for valid vehicle registration number read from CSV files using the below file15.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;16",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;16",
+        "after": [
+          {
+            "result": {
+              "duration": 40630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1037207,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file15.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file15.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -761,20 +2193,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1030812750,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 91254515,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -786,20 +2224,93 @@
         ]
       },
       {
-        "line": 43,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 989354,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1186728979,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 66653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1651870338,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 50,
         "name": "Search for valid vehicle registration number read from CSV files using the below file16.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;17",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;17",
+        "after": [
+          {
+            "result": {
+              "duration": 20745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 581754,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file16.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file16.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -807,20 +2318,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1061137197,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 91353778,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -832,20 +2349,93 @@
         ]
       },
       {
-        "line": 44,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1842045,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1088262739,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1720552819,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 51,
         "name": "Search for valid vehicle registration number read from CSV files using the below file17.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;18",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;18",
+        "after": [
+          {
+            "result": {
+              "duration": 40420,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 351253,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file17.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file17.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -853,20 +2443,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1074992421,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 146150018,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -878,20 +2474,93 @@
         ]
       },
       {
-        "line": 45,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 341643,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1010274263,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79646,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1878923946,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 52,
         "name": "Search for valid vehicle registration number read from CSV files using the below file18.csv examples",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;19",
+        "id": "getting-vehicle-details;search-for-valid-vehicle-registration-number-read-from-csv-files-using-the-below-\u003cfile-name\u003e-examples;;19",
+        "after": [
+          {
+            "result": {
+              "duration": 38205,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 640643,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 30,
             "name": "I get test data from CSV file file18.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file18.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -899,20 +2568,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1096316320,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 31,
             "name": "I enter a valid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAValidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 109381937,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 32,
             "name": "I should be able to see the vehicle\u0027s make and colour for each registration number entered",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iShouldBeAbleToSeeTheVehicleSMakeAndColourForEachRegistrationNumberEntered()"
+            },
             "keyword": "Then "
           }
         ],
@@ -924,20 +2599,93 @@
         ]
       },
       {
-        "line": 56,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 431126,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1412033511,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 34539,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1978495598,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 61,
         "name": "Search for invalid vehicle registration number read from CSV file using the below file19.csv example",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-invalid-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "id": "getting-vehicle-details;search-for-invalid-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 26391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1024229,
+              "status": "passed"
             },
-            "line": 51,
+            "line": 56,
             "name": "I get test data from CSV file file19.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file19.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -945,20 +2693,32 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 15688150862,
+              "status": "passed"
             },
-            "line": 52,
+            "line": 57,
             "name": "I enter an invalid vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAnInvalidVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 55859321,
+              "status": "passed"
             },
-            "line": 53,
+            "line": 58,
             "name": "I should be able to get an \"error message\" displayed for invalid registration number",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "error message",
+                  "offset": 28
+                }
+              ],
+              "location": "VehicleSearchSteps.iShouldBeAbleToGetAnDisplayedForInvalidRegistrationNumber(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -970,20 +2730,93 @@
         ]
       },
       {
-        "line": 65,
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 655280,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the DVLAs Vehicles Information Page",
+            "match": {
+              "location": "VehicleSearchSteps.iAmOnTheDVLAsVehiclesInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1220933039,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I proceed with checking specific details of vehicles as below:",
+            "match": {
+              "location": "VehicleSearchSteps.iProceedWithCheckingSpecificDetailsOfVehiclesAsBelow()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46353,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlobalHooks.beforeAllTests()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1794692058,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.deleteAllCookies(Scenario)"
+            }
+          }
+        ],
+        "line": 70,
         "name": "Search for wrong vehicle registration number read from CSV file using the below file20.csv example",
         "description": "",
-        "id": "validating-the-details-of-a-vehicle-from-the-dvla-website;search-for-wrong-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "id": "getting-vehicle-details;search-for-wrong-vehicle-registration-number-read-from-csv-file-using-the-below-\u003cfile-name\u003e-example;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 33987,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 405684,
+              "status": "passed"
             },
-            "line": 60,
+            "line": 65,
             "name": "I get test data from CSV file file20.csv",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "file20.csv",
+                  "offset": 30
+                }
+              ],
+              "location": "VehicleSearchSteps.iGetTestDataFromCSVFile(String)"
+            },
             "matchedColumns": [
               0
             ],
@@ -991,20 +2824,32 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 16130601362,
+              "status": "passed"
             },
-            "line": 61,
+            "line": 66,
             "name": "I enter a wrong vehicle registration number on the searchField and click to continue",
-            "match": {},
+            "match": {
+              "location": "VehicleSearchSteps.iEnterAWrongVehicleRegistrationNumberOnTheSearchFieldAndClickToContinue()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 57843764,
+              "status": "passed"
             },
-            "line": 62,
+            "line": 67,
             "name": "I should be able to get an error Page with \"detailsNotFound error\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "detailsNotFound error",
+                  "offset": 44
+                }
+              ],
+              "location": "VehicleSearchSteps.iShouldBeAbleToGetAnErrorPageWith(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -1016,9 +2861,9 @@
         ]
       }
     ],
-    "name": "Validating the details of a vehicle from the DVLA website",
-    "description": "As a user\nI want to be able to input the registration number of a vehicle on the DVLA website\nSo that I can validate the authenticity of the vehicle",
-    "id": "validating-the-details-of-a-vehicle-from-the-dvla-website",
+    "name": "Getting Vehicle Details",
+    "description": "As a user\nI want to be able to get the details of some vehicles of my choice\nSo that I can validate the makes and colours of these vehicles.",
+    "id": "getting-vehicle-details",
     "keyword": "Feature",
     "uri": "Features/VehicleSearch.feature",
     "tags": [

@@ -2,8 +2,8 @@ package uk.gov.dvla.hooks;
 
 import java.util.concurrent.TimeUnit;
 
-import uk.co.gov.browsers.WebDriverFactory;
-import uk.co.gov.waits.WebWaits;
+import uk.gov.dvla.browsers.WebDriverFactory;
+import uk.gov.dvla.waits.WebWaits;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import uk.co.gov.utilities.EnvConfig;
+import uk.gov.dvla.utilities.EnvConfig;
 import java.util.concurrent.TimeUnit;
 
 
